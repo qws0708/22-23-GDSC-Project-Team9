@@ -1,0 +1,125 @@
+// Velo API 레퍼런스: https://www.wix.com/velo/reference/api-overview/introduction
+$w.onReady(function () {
+
+    $w("#checkbox1").onClick(() => {
+        if ($w("#checkbox1").value == "show") {
+
+            $w("#checkbox1").value = "hide"
+        } else {
+
+            $w("#checkbox1").value = "show"
+        }
+
+    });
+    $w("#checkbox2").onClick(() => {
+        if ($w("#checkbox2").value == "show") {
+            $w('#tree0').hide();
+            $w('#tree1').hide();
+            $w('#tree2').hide();
+            $w('#tree3').hide();
+            $w('#tree4').hide();
+            $w('#tree5').hide();
+            $w('#tree6').hide();
+
+            $w("#checkbox2").value = "hide"
+        } else {
+            $w('#tree0').show();
+            $w('#tree1').show();
+            $w('#tree2').show();
+            $w('#tree3').show();
+            $w('#tree4').show();
+            $w('#tree5').show();
+            $w('#tree6').show();
+
+            $w("#checkbox2").value = "show"
+        }
+
+    });
+    $w("#checkbox3").onClick(() => {
+        if ($w("#checkbox3").value == "show") {
+            $w('#grass0').hide();
+            $w('#grass1').hide();
+            $w('#grass2').hide();
+            $w('#grass3').hide();
+
+            $w("#checkbox3").value = "hide"
+        } else {
+            $w('#grass0').show();
+            $w('#grass1').show();
+            $w('#grass2').show();
+            $w('#grass3').show();
+            $w("#checkbox3").value = "show"
+        }
+
+    });
+    $w("#checkbox4").onClick(() => {
+        if ($w("#checkbox4").value == "show") {
+            $w('#flower0').hide();
+            $w('#flower1').hide();
+            $w('#flower2').hide();
+            $w('#flower3').hide();
+
+            $w("#checkbox4").value = "hide"
+        } else {
+            $w('#flower0').show();
+            $w('#flower1').show();
+            $w('#flower2').show();
+            $w('#flower3').show();
+
+            $w("#checkbox4").value = "show"
+        }
+
+    });
+    $w("#checkbox5").onClick(() => {
+        if ($w("#checkbox5").value == "show") {
+            $w('#etc0').hide();
+            $w('#etc1').hide();
+            $w('#etc2').hide();
+            $w('#etc3').hide();
+            $w('#etc4').hide();
+            $w('#etc5').hide();
+
+            $w("#checkbox5").value = "hide"
+        } else {
+            $w('#etc0').show();
+            $w('#etc1').show();
+            $w('#etc2').show();
+            $w('#etc3').show();
+            $w('#etc4').show();
+            $w('#etc5').show();
+            $w("#checkbox5").value = "show"
+        }
+
+    });
+    $w("#checkbox6").onClick(() => {
+        if ($w("#checkbox6").value == "show") {
+            $w('#signs0').hide();
+            $w('#signs2').hide();
+            $w('#signs3').hide();
+            $w('#signs4').hide();
+
+            $w("#checkbox6").value = "hide"
+        } else {
+            $w('#signs0').show();
+            $w('#signs2').show();
+            $w('#signs3').show();
+            $w('#signs4').show();
+            $w("#checkbox6").value = "show"
+        }
+
+    });
+    $w("#checkbox7").onClick(() => {
+        if ($w("#checkbox7").value == "show") {
+            $w('#bench0').hide();
+            $w('#bench1').hide();
+
+            $w("#checkbox7").value = "hide"
+        } else {
+            $w('#bench0').show();
+            $w('#bench1').show();
+            $w("#checkbox7").value = "show"
+        }
+
+    });
+
+});
